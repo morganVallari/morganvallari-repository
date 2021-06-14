@@ -1,0 +1,11 @@
+/* dropdown */
+.dropdown .btn {width: 100%;}
+
+/* checkbox */
+.checkbox-container > h3 {font-size: 1em;}
+
+input[type="checkbox"] + label {display: inline;}
+
+.breadcrumbs > ul > li {color: rgba(0, 0, 0, .5); display: inline; font-size: .9em;}
+/* ::after indica che dopo ogni elemento con le classi/attributi indicati bisogna inserire il contenuto riportato dalla proprietà content */
+.breadcrumbs li:not(:last-child)::after {content: " >";}
