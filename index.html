@@ -4,10 +4,14 @@
 	<title>Esercizio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="stile2.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 	
 </head>
-		   		<!-- Bootstrap Navbar -->
+<body>		   		
+	<!-- Bootstrap Navbar -->
+	<header>
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		  <a class="navbar-brand" href="#">Attestazioni Dantesche</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -16,19 +20,22 @@
 		  <div class="collapse navbar-collapse" id="navbarNav">
 		    <ul class="navbar-nav">
 		      <li class="nav-item active">
-		        <a class="nav-link" href="#">Testi <span class="sr-only">(current)</span></a>
+		        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Immagini</a>
+		        <a class="nav-link" href="#">Introduzione</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Audio</a>
+		        <a class="nav-link" href="#">Catalogo</a>
 		      </li>
 		      <li class="nav-item">
-		        <a class="nav-link" href="#">Video</a>
-		        <li class="nav-item">
-		        <a class="nav-link" href="#">3D</a>
+		        <a class="nav-link" href="#">|</a>
 		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Persone</a>
+		      </li>
+		      <li>
+		      	<a class="nav-link" href="#">Temi</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -37,148 +44,243 @@
             <button class="btn btn-primary btn-dark my-2 my-sm-0" type="submit">Cerca</button>
           </form>
 		</nav>
-		    	
-
-		<div class="container-fluid bg-dark">
-			<div class="row">
-			    <div class="col-md-12 pt-5 pb-5 mb-2 text-white"><h2 class="text-light text-center"><span class="text-white-50">Catalogo</span> Lista</h2>
+	</header>
+		    <!-- Inizio sezione centrale -->
+	<main>
+		<section class="container-fluid">
+			<div class="row bg-dark">
+			    <div class="col-md-12 pt-4 pb-4 mb-2 text-white"><h2 class="text-light text-center"><span class="text-white-50">Catalogo</span> Lista</h2>
                 </div>
 			 </div>
-		</div>
+		
+		  	<div class="row">
+			    <div class="col-md-2">
+			    	<aside style="padding-top: 10px;">
 
-		<div class="container-fluid">
-		  <div class="row">
-		    <div class="col-md-2" style="background-color: lightblue;">
-		    	<aside style="padding-top: 10px;">
+			    		<nav class="breadcrumbs">
+                            <ul class="pl-0">
+                                <li><a href="index.html" class="link" title="Torna a Home">Home</a></li>
+                                <li>Lista</li>
+                            </ul>
+                        </nav>
 
-		    		<div class="checkbox-container mt-4">
-		    			<h3 class="mb-0">Filtra la lista</h3>
-				    	<!-- Bootstrap dropdown navigazione -->
-						<div class="dropdown dropright mt-1">
-						  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Opere
-						  </button>
-						  <div class="dropdown-menu p-3">
-						    <!-- Dropdown menu links -->
+                         <div class="checkbox-container">
+                            <h3 class="mb-0">Riordina la lista:</h3>
+                            <div class="btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary active mt-1">
+                                    <input type="radio" checked> A-Z
+                                </label>
+                                <label class="btn btn-outline-secondary mt-1">
+                                    <input type="radio"> Z-A
+                                </label>
+                                <label class="btn btn-outline-secondary mt-1">
+                                    <input type="radio"> Ordine cronologico
+                                </label>
+                            </div>
+                        </div>
 
-	                         <input type="checkbox">
-	                         <label>Opera uno</label><br>
-	                         <input type="checkbox">
-	                         <label>Opera due</label><br>
-	                         <input type="checkbox">
-	                         <label>Opera tre</label><br>
-	                         <button type="button" class="btn btn-blu mt-2">Filtra</button>
-						  </div>
-						</div>
-
-						<div class="dropdown dropright mt-1">
-						  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Date
-						  </button>
-						  <div class="dropdown-menu p-3">
-						    <!-- Dropdown menu links -->
-						    <label>1825</label><br>
-	                        <input type="checkbox">
-	                        <label>1827</label><br>
-	                        <input type="checkbox">
-	                        <label>1851</label><br>
-	                        <input type="checkbox">
-	                        <label>1860</label><br>
-	                        <input type="checkbox">
-	                        <label>1900</label><br>
-	                        <input type="checkbox">
-	                        <label>1963</label><br>
-	                        <button type="button" class="btn btn-blue mt-2">Filtra</button>
-						  </div>
-						</div>
-
-						<div class="dropdown dropright mt-1">
-						  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						    Luoghi
-						  </button>
-						  <div class="dropdown-menu p-3">
-						    <!-- Dropdown menu links -->
-						     <input type="checkbox">
-		                     <label>Biblioteca Intronati</label><br>
-		                     <input type="checkbox">
-		                     <label>Luogo due</label><br>
-		                     <input type="checkbox">
-		                     <label>Luogo tre</label><br>
-		                     <button type="button" class="btn btn-blu mt-2">Filtra</button>
-						  </div>
-						</div>
-					</div>
-				</aside>
-		    </div>
-		    <div class="col-md-9">
-		    	<div class="row">
-		    		<div class="col-md-4" style="background-color: green;">A
-		    			<div class="card" style="width: 18rem;">
-							  <img src="..." class="card-img-top" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							  </div>
-							  <ul class="list-group list-group-flush">
-							    <li class="list-group-item">An item</li>
-							    <li class="list-group-item">A second item</li>
-							    <li class="list-group-item">A third item</li>
-							  </ul>
-							  <div class="card-body">
-							    <a href="#" class="card-link">Card link</a>
-							    <a href="#" class="card-link">Another link</a>
-							  </div>
-						</div>
-
-		    		</div>
-		    		<div class="col-md-4" style="background-color: white;">B
-		    			<div class="card" style="width: 18rem;">
-							  <img src="..." class="card-img-top" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							  </div>
-							  <ul class="list-group list-group-flush">
-							    <li class="list-group-item">An item</li>
-							    <li class="list-group-item">A second item</li>
-							    <li class="list-group-item">A third item</li>
-							  </ul>
-							  <div class="card-body">
-							    <a href="#" class="card-link">Card link</a>
-							    <a href="#" class="card-link">Another link</a>
-							  </div>
-						</div>
-		    		</div>
-		    		<div class="col-md-4" style="background-color: lightgreen;">C
-		    			<div class="card" style="width: 18rem;">
-							  <img src="..." class="card-img-top" alt="...">
-							  <div class="card-body">
-							    <h5 class="card-title">Card title</h5>
-							    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							  </div>
-							  <ul class="list-group list-group-flush">
-							    <li class="list-group-item">An item</li>
-							    <li class="list-group-item">A second item</li>
-							    <li class="list-group-item">A third item</li>
-							  </ul>
-							  <div class="card-body">
-							    <a href="#" class="card-link">Card link</a>
-							    <a href="#" class="card-link">Another link</a>
-							  </div>
-						</div>
-		    		</div>   		
-		    		
+			    		 <div class="checkbox-container mt-4">
+	                            <h3 class="mb-0">Filtra la lista:</h3>
+	                            <!-- dropdown menu -->
+	                            <div class="dropdown dropright mt-1">
+	                                <button class="btn btn-primary btn-primary dropdown-toggle" type="button"
+	                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                    Opere
+	                                </button>
+	                                <div class="dropdown-menu p-3">
+	                                    <!-- checkbox -->
+	                                    <input type="checkbox">
+	                                    <label>Convivio</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Commedia</label><br>
+	                                    <input type="checkbox">
+	                                    <label>De Monarchia</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Detto d'Amore</label><br>
+	                                    <input type="checkbox">
+	                                    <label>De vulgari eloquentia</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Egloghe</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Epistole</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Il fiore</label><br>
+	                                    <input type="checkbox">
+	                                    <label></label>Quaestio de aqua et terra<br>
+	                                    <input type="checkbox">
+	                                    <label>Rime</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Vita Nova</label><br>
+	                                    <button type="button" class="btn btn-primary mt-2">Filtra</button>
+	                                </div>
+	                            </div>
+	                            <div class="dropdown dropright mt-1">
+	                                <button class="btn btn-primary btn-blue dropdown-toggle" type="button"
+	                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                    Date
+	                                </button>
+	                                <div class="dropdown-menu p-3">
+	                                    <!-- checkbox -->
+	                                    <input type="checkbox">
+	                                    <label>1825</label><br>
+	                                    <input type="checkbox">
+	                                    <label>1827</label><br>
+	                                    <input type="checkbox">
+	                                    <label>1851</label><br>
+	                                    <input type="checkbox">
+	                                    <label>1860</label><br>
+	                                    <input type="checkbox">
+	                                    <label>1900</label><br>
+	                                    <input type="checkbox">
+	                                    <label>1963</label><br>
+	                                    <button type="button" class="btn btn-blue mt-2">Filtra</button>
+	                                </div>
+	                            </div>
+	                            <div class="dropdown dropright mt-1">
+	                                <button class="btn btn-primary btn-info dropdown-toggle" type="button"
+	                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	                                    Luoghi
+	                                </button>
+	                                <div class="dropdown-menu p-3">
+	                                    <!-- checkbox -->
+	                                    <input type="checkbox">
+	                                    <label>Fondazione Ranieri di Sorbello, Perugia</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Galleria Civica di Arte Moderna e Contemporanea, Torino</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Internet Culturale</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Istituto Luce - Cinecittà, Roma</label><br>
+	                                    <input type="checkbox">
+	                                    <label>Reggia di Caserta, Caserta</label><br>
+	                                    <button type="button" class="btn btn-info mt-2">Filtra</button>
+	                                </div>
+	                            </div>
+	                        </div>
+					</aside>
 		    	</div>
-		    </div>
+
+		    <!-- *************** Inizio Section ****************** -->
+
+		    	<div class="col-md-9">
+		    		<div class="row">
+		    			<div class="col-md-12 mt-4">
+		    				<ul class="nav nav-tabs">
+  								<li class="nav-item">
+    								<a class="nav-link active" href="#">All</a>
+ 	 							</li>
+  								<li class="nav-item">
+								    <a class="nav-link" href="#">Testi</a>
+								</li>
+								<li class="nav-item">
+								    <a class="nav-link" href="#">Immagini</a>
+								</li>
+								<li class="nav-item">
+								    <a class="nav-link" href="#">Audio</a>
+								</li>
+								<li class="nav-item">
+								    <a class="nav-link" href="#">Video</a>
+								</li>
+								<li class="nav-item">
+								    <a class="nav-link" href="#">3D</a>
+								</li>
+							</ul>
+		    			</div>
+	    			</div>
+			    	<div class="row mt-4">
+				    	<div class="col-md-3">
+				    			<div class="card card-item">
+				    				<span class="ml-2 mt-2 p-2"><a href="#" target="_blank"
+                                        title="Vedi tutte le immagini del catalogo">
+                                        <i class="bi bi-images"></i></a></span>
+									  <img src="immagini/DanteImmagine.jpg" class="card-img-top" alt="...">
+									  <div class="card-body">
+									    <h5 class="card-title">Rappresentazione di Dante</h5>
+									    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									  </div>
+									  <ul class="list-group list-group-flush">
+									    <li class="list-group-item">An item</li>
+									    <li class="list-group-item">A second item</li>
+									    <li class="list-group-item">A third item</li>
+									  </ul>
+									  <div class="card-body">
+									    <a href="#" class="card-link">Card link</a>
+									    <a href="#" class="card-link">Another link</a>
+									  </div>
+								</div>
+				    		</div>
+				    		<div class="col-md-3">
+				    			<div class="card">
+									  <img src="immagini/DanteMelodramma.jpg" class="card-img-top" alt="...">
+									  <div class="card-body">
+									    <h5 class="card-title">Card title</h5>
+									    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									  </div>
+									  <ul class="list-group list-group-flush">
+									    <li class="list-group-item">An item</li>
+									    <li class="list-group-item">A second item</li>
+									    <li class="list-group-item">A third item</li>
+									  </ul>
+									  <div class="card-body">
+									    <a href="#" class="card-link">Card link</a>
+									    <a href="#" class="card-link">Another link</a>
+									  </div>
+								</div>
+				    		</div>
+				    		<div class="col-md-3">
+				    			<div class="card card-item">
+									  <img src="immagini/DanteAudio.png" class="card-img-top" alt="...">
+									  <div class="card-body">
+									    <h5 class="card-title">Card title</h5>
+									    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									  </div>
+									  <ul class="list-group list-group-flush">
+									    <li class="list-group-item">An item</li>
+									    <li class="list-group-item">A second item</li>
+									    <li class="list-group-item">A third item</li>
+									  </ul>
+									  <div class="card-body">
+									    <a href="#" class="card-link">Card link</a>
+									    <a href="#" class="card-link">Another link</a>
+									  </div>
+								</div>
+							</div>
+
+							<div class="col-md-3">
+				    			<div class="card">
+									  <img src="immagini/dante-video.jpg" class="card-img-top" alt="...">
+									  <div class="card-body">
+									    <h5 class="card-title">D</h5>
+									    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+									  </div>
+									  <ul class="list-group list-group-flush">
+									    <li class="list-group-item">An item</li>
+									    <li class="list-group-item">A second item</li>
+									    <li class="list-group-item">A third item</li>
+									  </ul>
+									  <div class="card-body">
+									    <a href="#" class="card-link">Card link</a>
+									    <a href="#" class="card-link">Another link</a>
+									  </div>
+								</div>	
+							
+							</div>
+			    		</div> <!--chiudo row-->
+			    	
+			</div> <!--chiudo colonna centrale-->
+
 		    <div class="col-md-1" style="background-color: grey;">col-2</div>
 
 		  </div>
-		</div> <!--fin cont fluid-->
+		</section>  <!--fin cont fluid-->
 
 	<!--Importo script jquery e js per Bootstrap-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
-<body>
-
+	</main>
 </body>
+
+<footer class="bg-dark">
+	<h3 class="text-center text-white-50">Morgan Vallari - Esercizio Digital Humanities</h3>
+</footer>
 </html>
